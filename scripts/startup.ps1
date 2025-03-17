@@ -4,6 +4,7 @@
 #$OSActivation = 'Volume'
 #$OSLanguage = 'en-us'
 # $GroupTag = "OSDCloud"
+import-module OSD -Force
 $OSDModuleResource.OSDCloud.Values.Version = 'Windows 11'
 $OSDModuleResource.OSDCloud.Values.ReleaseID = @{'23H2','24H2'}
 $OSDModuleResource.OSDCloud.Values.Activation = 'Volume'
