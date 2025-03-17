@@ -1,14 +1,14 @@
 # Settings
 $OSName = 'Windows 11 23H2 x64'
 $OSEdition = 'Enterprise'
-$OSActivation = Volume'
+$OSActivation = 'Volume'
 $OSLanguage = 'en-us'
-#$GroupTag = "OSDCloud"
+# $GroupTag = "OSDCloud"
 $TimeServerUrl = "time.cloudflare.com"
-#$OutputFile = "X:\AutopilotHash.csv"
-#$TenantID = [Environment]::GetEnvironmentVariable('OSDCloudAPTenantID','Machine') # $env:OSDCloudAPTenantID doesn't work within WinPe
-#$AppID = [Environment]::GetEnvironmentVariable('OSDCloudAPAppID','Machine')
-#$AppSecret = [Environment]::GetEnvironmentVariable('OSDCloudAPAppSecret','Machine')
+# $OutputFile = "X:\AutopilotHash.csv"
+# $TenantID = [Environment]::GetEnvironmentVariable('OSDCloudAPTenantID','Machine') # $env:OSDCloudAPTenantID doesn't work within WinPe
+# $AppID = [Environment]::GetEnvironmentVariable('OSDCloudAPAppID','Machine')
+# $AppSecret = [Environment]::GetEnvironmentVariable('OSDCloudAPAppSecret','Machine')
 
 #Set Global OSDCloud Vars
 $Global:MyOSDCloud = [ordered]@{
