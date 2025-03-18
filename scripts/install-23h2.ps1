@@ -4,7 +4,7 @@ $OSEdition = 'Enterprise'
 $OSActivation = 'Volume'
 $OSLanguage = 'en-us'
 
-$TimeServerUrl = "pool.ntp.org"
+#$TimeServerUrl = "pool.ntp.org"
 
 #Set Global OSDCloud Vars
 $Global:MyOSDCloud = [ordered]@{
@@ -22,8 +22,8 @@ $Global:MyOSDCloud = [ordered]@{
 }
 
 # Set the time
-$DateTime = (Invoke-WebRequest -Uri $TimeServerUrl -UseBasicParsing).Headers.Date
-Set-Date -Date $DateTime
+#$DateTime = (Invoke-WebRequest -Uri $TimeServerUrl -UseBasicParsing).Headers.Date
+#Set-Date -Date $DateTime
 
 Write-Host "Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage"
 Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation -OSLanguage $OSLanguage
